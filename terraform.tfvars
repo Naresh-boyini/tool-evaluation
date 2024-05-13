@@ -1,5 +1,0 @@
-naresh_cidr    = "172.0.0.0/16"
-naresh_tenancy = "default"
-vpc_name       = "my-naresh-vpc"
-subnet_cidr    = "172.0.0.0/24"
-name_subnet    = "my-subnet"
