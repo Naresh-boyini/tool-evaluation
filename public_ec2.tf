@@ -12,7 +12,7 @@ resource "aws_instance" "deploy_ec2_instance" {
   key_name = "naresh"
 
   tags = {
-    Name = " deploy-ec2"
+    Name = "publickibana"
   }
   # associate_public_ip_address = false
 }
