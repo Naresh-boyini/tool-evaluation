@@ -2,9 +2,9 @@
 
 resource "aws_vpc_peering_connection" "deploy_vpc_peering" {
   #  owner account id
-  peer_owner_id = "590184104980"
+  peer_owner_id = "740366571493"
   #   vpc id of another vpc , acceptor
-  peer_vpc_id = "vpc-0651d334bafa4bbb6"
+  peer_vpc_id = "vpc-01cadd59c7c88ef25"
   #   requester
   vpc_id      = aws_vpc.deploy_vpc.id
   auto_accept = true
@@ -42,7 +42,7 @@ resource "aws_route" "deploy_peering_private2" {
 # adding peering to default vpc route table
 
 resource "aws_route" "deploy_peering_default" {
-  route_table_id            = "rtb-02e2cf870beb39998"
+  route_table_id            = "rtb-0f6a9f766c3565265"
   destination_cidr_block    = "10.0.0.0/16"
   vpc_peering_connection_id = aws_vpc_peering_connection.deploy_vpc_peering.id
 }
