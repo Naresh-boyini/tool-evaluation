@@ -71,4 +71,10 @@ resource "aws_security_group" "web_server_sg_private2_tf" {
     protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
   }
+egress {
+  from_port   = 5601
+  to_port     = 5601
+  protocol    = "tcp"
+  cidr_blocks = ["0.0.0.0/0"]
+}
 }
