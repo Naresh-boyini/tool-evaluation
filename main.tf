@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "ap-southeast-1"
+  region = "eu-west-1"
 }
 
 # vpc
@@ -50,11 +50,11 @@ resource "aws_nat_gateway" "deploy_nat_gateway" {
 # data block for already created vpc
 
 data "aws_vpc" "selected" {
-  id = "vpc-0651d334bafa4bbb6"
+  id = "vpc-01cadd59c7c88ef25"
 }
 
 data "aws_subnet" "selected" {
-  id = "subnet-06f042a3d8eefb932"
+  id = "subnet-02bdceb11ace073e8"
 }
 
 
