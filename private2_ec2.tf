@@ -1,7 +1,7 @@
 # private1 ec2 instance
 
 resource "aws_instance" "deploy_ec2_private2_instance" {
-  ami           = "ami-0be48b687295f8bd6" # us-west-2
+  ami           = "ami-0607a9783dd204cae"
   instance_type = "t3.medium"
 
   network_interface {
