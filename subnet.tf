@@ -8,7 +8,7 @@ resource "aws_subnet" "deploy_subnet_public" {
     Name = "public"
   }
 
-  availability_zone = "ap-southeast-1a"
+  availability_zone = "eu-west-1a"
 
   map_public_ip_on_launch = true
 }
@@ -21,7 +21,7 @@ resource "aws_subnet" "deploy_subnet_public2" {
     Name = "public2-subnet"
   }
 
-  availability_zone = "ap-southeast-1b"
+  availability_zone = "eu-west-1b"
 
   map_public_ip_on_launch = true
 }
@@ -35,7 +35,7 @@ resource "aws_subnet" "deploy_subnet_private1" {
     Name = "private1"
   }
 
-  availability_zone = "ap-southeast-1a"
+  availability_zone = "eu-west-1a"
   # map_public_ip_on_launch = false
 }
 
@@ -47,7 +47,7 @@ resource "aws_subnet" "deploy_subnet_private2" {
     Name = "private2"
   }
 
-  availability_zone = "ap-southeast-1b"
+  availability_zone = "eu-west-1b"
   # map_public_ip_on_launch = false
 }
 
