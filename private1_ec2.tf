@@ -2,7 +2,7 @@
 
 resource "aws_instance" "deploy_ec2_private1_instance" {
   ami           = "ami-0607a9783dd204cae"
-  instance_type = "t3.medium"
+  instance_type = "t3.large"
 
   network_interface {
     network_interface_id = aws_network_interface.deploy_private1_network_interface.id
